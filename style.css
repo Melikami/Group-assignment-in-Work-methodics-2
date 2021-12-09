@@ -3,12 +3,6 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
-/* container for icon and h1 */
-.container {
-    overflow:auto;
-    float:left;
-}
-
 /* styling the img element */
 .profilePics {
     border-radius: 50%;
