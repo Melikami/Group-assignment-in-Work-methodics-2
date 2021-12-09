@@ -1,0 +1,71 @@
+
+/* Rectangle 11 */
+/* .profile-icon {
+position: absolute;
+width: 38px;
+height: 52px;
+
+background: #FFFFFF;
+border-radius: 60px;
+} */
+
+/* profile */
+.profile-head {
+position: absolute;
+width: 187px;
+height: 72px;
+
+font-family: "Quicksand";
+font-style: normal;
+font-weight: 300;
+font-size: 28px;
+line-height: 35px;
+color: #000000;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+.container {
+    overflow:auto;
+    float:left;
+}
+
+.profilePics {
+    border-radius: 50%;
+    border: 12px solid #EC9126;
+    box-sizing: border-box;
+    max-width: 200px;
+}
+
+h1 {
+display: inline;
+}
+
+p {
+font-family: Quicksand;
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 25px;
+color: #000000;
+}
+
+button {
+background-color: #EC9126;
+color: #FFFFFF;
+border: none;
+border-radius: 25px;
+padding: 10px 15px 10px 15px;
+margin: 6px;
+}
+/* Ellipse 2 */
+/* .profile-pic {
+position: absolute;
+width: 160px;
+height: 160px;
+
+background: #FFFFFF;
+border: 7px solid #EC9126;
+box-sizing: border-box;
+} */
