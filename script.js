@@ -26,43 +26,49 @@ for (let i = 0; i <1; i++) {
     profiles.push(new Profile(names[i], diets[i], ages[i], foods[i], imgs[i]));
 }
 
+
+
+    function newProfile () {
+        var name = document.getElementById('nameInput').value;
+        var age = document.getElementById('ageInput').value;
+        var food = document.getElementById('foodInput').value;
+        var diet = document.getElementById('browser').value;
+        var img = document.getElementById('imageInput').value;
+    
+        profiles.push(new Profile (name, age, food, diet, img));
+    
+        document.getElementById('nameInput').value = '';
+        document.getElementById('ageInput').value = '';
+        document.getElementById('foodInput').value = '';
+        document.getElementById('browser').value = ''
+        document.getElementById('imageInput').value = ''
+    
+        // location.href = "profile.html";
+    };
+    
+    
 /* displays object properties in img and p tags */
 window.addEventListener('load', (event) => {
 
-        /* displays object properties in p tag */
-        nameDisplay = document.getElementById('nameDisplay');
-        nameDisplay.innerHTML = names.toString();
+    /* displays object properties in p tag */
+    nameDisplay = document.getElementById('nameDisplay');
+    nameDisplay.innerHTML = names.toString();
 
-        /* displays object properties in p tag  */
-        dietDisplay = document.getElementById('dietDisplay');
-        dietDisplay.innerHTML = diets.toString();
+    /* displays object properties in p tag  */
+    dietDisplay = document.getElementById('dietDisplay');
+    dietDisplay.innerHTML = diets.toString();
 
-        /* displays object properties in p tag  */
-        ageDisplay = document.getElementById('ageDisplay');
-        ageDisplay.innerHTML = ages.toString();
+    /* displays object properties in p tag  */
+    ageDisplay = document.getElementById('ageDisplay');
+    ageDisplay.innerHTML = ages.toString();
 
-        /* displays object properties in p tag  */
-        foodDisplay = document.getElementById('foodDisplay');
-        foodDisplay.innerHTML = foods.toString();
+    /* displays object properties in p tag  */
+    foodDisplay = document.getElementById('foodDisplay');
+    foodDisplay.innerHTML = foods.toString();
 
-        /* displays object properties in img tag with variable */
-        var profilePics = document.getElementById('profilePics');
-        profilePics.src = imgs.toString();
-       
-    });
-
-// var btn = document.getElementById('btn');
-// btn.addEventListener('click', function newProfile() {
-
-//     let name = document.getElementById('nameInput').value;
-//     let age = document.getElementById('ageInput').value;
-//     let food = document.getElementById('foodInput').value;
-//     let diet = document.getElementById('browser').value;
-
-//     profiles.push(new Profile (name, age, food, diet));
-// });
-    
-    
-    
-    
+    /* displays object properties in img tag with variable */
+    var profilePics = document.getElementById('profilePics');
+    profilePics.src = imgs.toString();
+   
+});
     
