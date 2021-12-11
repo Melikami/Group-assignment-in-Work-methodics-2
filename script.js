@@ -79,13 +79,16 @@ function toggleTheme() {
     // elements.
     // Select your element using indexing.
     var theme = document.getElementsByTagName('link')[0];
+    var img = document.getElementById('profile');
 
     // Change the value of href attribute 
     // to change the css sheet.
     if (theme.getAttribute('href') == 'style.css') {
         theme.setAttribute('href', 'stylechange.css');
+        img.src = 'img/profile2.png'
     } else {
         theme.setAttribute('href', 'style.css');
+        img.src = 'img/profile.png'
     }
 }
 
