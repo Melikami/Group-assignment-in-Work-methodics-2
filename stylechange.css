@@ -6,7 +6,7 @@ body {
 /* styling the img element */
 .profilePics {
     border-radius: 50%;
-    border: 12px solid #EC9126;
+    border: 12px solid #096cc9;
     box-sizing: border-box;
     max-width: 200px;
 }
@@ -27,7 +27,7 @@ color: #000000;
 
 /* button styling */
 button {
-background-color: #EC9126 !important;
+background-color: #096cc9 !important;
 color: #FFFFFF !important;
 border: none !important;
 border-radius: 25px !important;

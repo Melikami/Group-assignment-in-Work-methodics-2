@@ -71,4 +71,40 @@ window.addEventListener('load', (event) => {
     profilePics.src = imgs.toString();
    
 });
-    
+
+
+
+function toggleTheme() {
+    // Obtains an array of all <link>
+    // elements.
+    // Select your element using indexing.
+    var theme = document.getElementsByTagName('link')[0];
+
+    // Change the value of href attribute 
+    // to change the css sheet.
+    if (theme.getAttribute('href') == 'style.css') {
+        theme.setAttribute('href', 'stylechange.css');
+    } else {
+        theme.setAttribute('href', 'style.css');
+    }
+}
+
+
+
+
+
+{/* <button id="stylesheet1" onclick="initate();"> Default Style Sheet </button>
+    <button id="stylesheet2" onclick="other();"> Dark Style Sheet </button>
+function swapStyleSheet(sheet) {
+    document.getElementById("pagestyle").setAttribute("href", sheet);  
+}
+
+function initate() {
+    var style1 = document.getElementById("stylesheet1");
+    style1.onclick = swapStyleSheet("style.css");
+}
+
+function other() {
+    var style2 = document.getElementById("stylesheet2");
+    style2.onclick = swapStyleSheet("stylechange.css");
+} */}
