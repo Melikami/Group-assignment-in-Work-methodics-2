@@ -31,14 +31,79 @@ color: #000000;
   width: 200px;
 }
 
-/* button styling */
-button {
-background-color: #5B7EE0 !important;
-color: #FFFFFF !important;
-border: none !important;
-border-radius: 25px !important;
-padding: 10px 10px 10px 10px !important;
-margin: 6px !important;
+button {#5B7EE0
+  cursor: pointer !important;
+  border: 3px solid #455fa8 !important;
+  background-color: #5B7EE0 !important;
+  color: white !important;
+  border-radius: 30px !important;
+  margin: 10px 10px !important;
+  padding: 10px 10px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;    
+}
+
+button:hover {
+  cursor: pointer !important;
+  border: 3px solid #5B7EE0 !important;
+  background-color: white !important;
+  color: black !important;
+  border-radius: 30px !important;
+  margin: 10px 10px !important;
+  padding: 10px 10px;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;    
+}
+
+label.button input[type="button"] {
+  position:  !important;
+  top: -1000px !important;
+}
+
+#imageInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 15px 15px 15px 15px;
+  padding: 15px 15px 15px 15px;
+}
+
+#myImg {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+flex-direction: column;
+border: 15px solid #5B7EE0;
+width: 400px;
+height: 400px;
+border-radius: 50%;
+color: green;
+align-self: center;
+margin-top: 5px;
+margin-bottom: 35px;
+}
+
+label.label input[type="file"] {
+position: absolute;
+top: -1000px;
+}
+
+.label {
+cursor: pointer;
+border: 3px solid orange;
+border-radius: 30px;
+margin: 10px 10px;
+padding: 10px 10px;
+justify-content: center;
+align-items: center;
+text-align: center;
+
+
 }
 
 * {
