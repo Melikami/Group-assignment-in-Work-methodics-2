@@ -3,6 +3,12 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
+/* Hides the scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
 /* styling the img element */
 .profilePics {
     border-radius: 50%;
@@ -26,18 +32,18 @@ color: #000000;
 }
 
 .div-centered {
-  text-align: left; 
+  text-align: center; 
   margin: auto; 
   width: 200px;
 }
 
 button {#5B7EE0
   cursor: pointer !important;
-  border: 3px solid #455fa8 !important;
+  border: 3px solid #688ffa !important;
   background-color: #5B7EE0 !important;
   color: white !important;
   border-radius: 30px !important;
-  margin: 10px 10px !important;
+  margin: 5px 5px !important;
   padding: 10px 10px !important;
   justify-content: center !important;
   align-items: center !important;
@@ -50,7 +56,7 @@ button:hover {
   background-color: white !important;
   color: black !important;
   border-radius: 30px !important;
-  margin: 10px 10px !important;
+  margin: 5px 5px !important;
   padding: 10px 10px;
   justify-content: center !important;
   align-items: center !important;
@@ -199,7 +205,7 @@ text-align: center;
   .brand-name.text {
     font-size: 30px;
     font-weight: 800;
-    background-image: linear-gradient(90deg, #f7b267 0%, #f25c54 100%);
+    background-image: linear-gradient(90deg, #688ffa 0%, #5B7EE0 100%);
     color: transparent;
     -webkit-background-clip: text;
   }

@@ -3,10 +3,10 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
-.boxed {
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 1200px;
+/* Hides the scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
 }
 
 /* styling the img element */
@@ -39,7 +39,7 @@ color: #000000;
 }
 
 .div-centered {
-    text-align: left; 
+    text-align: center; 
     margin: auto; 
     width: 200px;
   }
@@ -50,7 +50,7 @@ color: #000000;
     background-color: orange !important;
     color: white !important;
     border-radius: 30px !important;
-    margin: 10px 10px !important;
+    margin: 5px 5px !important;
     padding: 10px 10px !important;
     justify-content: center !important;
     align-items: center !important;
@@ -58,21 +58,42 @@ color: #000000;
 }
 
 button:hover {
-    cursor: pointer !important;
-    border: 3px solid orange !important;
-    background-color: white !important;
-    color: black !important;
-    border-radius: 30px !important;
-    margin: 10px 10px !important;
-    padding: 10px 10px !important;
-    justify-content: center !important;
-    align-items: center !important;
-    text-align: center !important;    
+  cursor: pointer !important;
+  border: 3px solid orange !important;
+  background-color: white !important;
+  color: black !important;
+  border-radius: 30px !important;
+  margin: 5px 5px !important;
+  padding: 10px 10px;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;    
+}
+
+.label {
+  cursor: pointer;
+  border: 3px solid orange;
+  border-radius: 30px;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.label:hover {
+  background-color: orange;
+  color: white;   
 }
 
   label.button input[type="button"] {
     position: absolute !important;
     top: -1000px !important;
+  }
+
+  label.label input[type="file"] {
+    position: absolute;
+    top: -1000px;
   }
 
   #imageInput {

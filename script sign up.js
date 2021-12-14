@@ -1,4 +1,10 @@
+const toggleDropdown = document.querySelector(".sub-links.container");
+console.log(toggleDropdown);
+const menu = document.querySelector(".drop-down.icon");
 
+menu.addEventListener("click", () => {
+  toggleDropdown.classList.toggle("show");
+});
 
 /* class for profile objects */
 class Profile {
@@ -11,22 +17,15 @@ class Profile {
     }
 }
 
-/* arrays for object properties */
-let names = ['Swedish Chef'];
-let diets = ['Omnivore'];
-let ages = ['61'];
-let foods = ['Meatballs'];
-let imgs = ['img/profile pic.jpg']
+// /* arrays for object properties */
+// let names = ['Swedish Chef'];
+// let diets = ['Omnivore'];
+// let ages = ['61'];
+// let foods = ['Meatballs'];
+// let imgs = ['img/profile pic.jpg']
 
 /* array for objects */
 let profiles = [];
-
-/* for loop to create objects */
-for (let i = 0; i <1; i++) {
-    profiles.push(new Profile(names[i], diets[i], ages[i], foods[i], imgs[i]));
-}
-
-
 
     function newProfile () {
         var name = document.getElementById('nameInput').value;
@@ -43,8 +42,7 @@ for (let i = 0; i <1; i++) {
         document.getElementById('browser').value = ''
         document.getElementById('imageInput').value = ''
 
+        //localStorage.setItem('')
     };
     
-
-
-
+//myStorage = window.localStorage;
