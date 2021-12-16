@@ -24,28 +24,7 @@ let profiles = [];
 /* for loop to create objects */
 for (let i = 0; i <1; i++) {
     profiles.push(new Profile(names[i], diets[i], ages[i], foods[i], imgs[i]));
-}
-
-
-
-    function newProfile () {
-        var name = document.getElementById('nameInput').value;
-        var age = document.getElementById('ageInput').value;
-        var food = document.getElementById('foodInput').value;
-        var diet = document.getElementById('browser').value;
-        var img = document.getElementById('imageInput').value;
-    
-        profiles.push(new Profile (name, age, food, diet, img));
-    
-        document.getElementById('nameInput').value = '';
-        document.getElementById('ageInput').value = '';
-        document.getElementById('foodInput').value = '';
-        document.getElementById('browser').value = ''
-        document.getElementById('imageInput').value = ''
-    
-        // location.href = "profile.html";
-    };
-    
+}   
     
 /* displays object properties in img and p tags */
 window.addEventListener('load', (event) => {
@@ -73,16 +52,13 @@ window.addEventListener('load', (event) => {
 });
 
 
-
+/* function to change stylesheet and css styling with button */
 function toggleTheme() {
-    // Obtains an array of all <link>
-    // elements.
-    // Select your element using indexing.
+    // obtain an array of all <link> elements.
     var theme = document.getElementsByTagName('link')[0];
     var img = document.getElementById('profile');
 
-    // Change the value of href attribute 
-    // to change the css sheet.
+    // changes value of link href to change stylesheet
     if (theme.getAttribute('href') == 'style.css') {
         theme.setAttribute('href', 'stylechange.css');
         img.src = 'img/profile2.png'
@@ -91,6 +67,7 @@ function toggleTheme() {
         img.src = 'img/profile.png'
     }
 }
+
 
 const toggleDropdown = document.querySelector(".sub-links.container");
 console.log(toggleDropdown);

@@ -1,10 +1,3 @@
-const toggleDropdown = document.querySelector(".sub-links.container");
-console.log(toggleDropdown);
-const menu = document.querySelector(".drop-down.icon");
-
-menu.addEventListener("click", () => {
-  toggleDropdown.classList.toggle("show");
-});
 
 /* class for profile objects */
 class Profile {
@@ -17,16 +10,10 @@ class Profile {
     }
 }
 
-// /* arrays for object properties */
-// let names = ['Swedish Chef'];
-// let diets = ['Omnivore'];
-// let ages = ['61'];
-// let foods = ['Meatballs'];
-// let imgs = ['img/profile pic.jpg']
-
 /* array for objects */
 let profiles = [];
 
+/* function to create new Profile object from input fiels */
     function newProfile () {
         var name = document.getElementById('nameInput').value;
         var age = document.getElementById('ageInput').value;
@@ -42,7 +29,13 @@ let profiles = [];
         document.getElementById('browser').value = ''
         document.getElementById('imageInput').value = ''
 
-        //localStorage.setItem('')
     };
     
-//myStorage = window.localStorage;
+    
+    const toggleDropdown = document.querySelector(".sub-links.container");
+    console.log(toggleDropdown);
+    const menu = document.querySelector(".drop-down.icon");
+    
+    menu.addEventListener("click", () => {
+      toggleDropdown.classList.toggle("show");
+    });

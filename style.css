@@ -3,13 +3,42 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
+/* font styling */
+* {
+  font-family: "Quicksand", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 /* Hides the scrollbar */
 ::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }
 
-/* styling the img element */
+/* p tag styling */
+p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  }
+
+/* displays img and h1 on same line */
+h1 {
+  display: inline;
+  }
+
+/* styling for a centering div */
+.div-centered {
+  text-align: center; 
+  margin: auto; 
+  width: 200px;
+}
+
+/* styling the profile img element */
 .profilePics {
     border-radius: 50%;
     border: 12px solid #EC9126;
@@ -17,6 +46,7 @@ body {
     max-width: 300px;
 }
 
+/* styling for plus add */
 .pluspost {
   width: 30px;
   height: 30px;
@@ -24,26 +54,66 @@ body {
   margin-right: 10px;
 }
 
-/* displays img and h1 on same line */
-h1 {
-display: inline;
+/* styling of img input */
+#imageInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin: 15px 15px 15px 15px;
+  padding: 15px 15px 15px 15px;
 }
 
-/* p tag styling */
-p {
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 25px;
-color: #000000;
+/* styling for img input */
+#myImg {
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+flex-direction: column;
+border: 15px solid #f9c74f;
+width: 400px;
+height: 400px;
+border-radius: 50%;
+color: green;
+align-self: center;
+margin-top: 5px;
+margin-bottom: 35px;
 }
 
-.div-centered {
-    text-align: center; 
-    margin: auto; 
-    width: 200px;
+
+/* label styling */
+.label {
+  cursor: pointer;
+  border: 3px solid orange;
+  border-radius: 30px;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* label hover styling */
+.label:hover {
+  background-color: orange;
+  color: white;   
+}
+
+/* label positioning button input */
+  label.button input[type="button"] {
+    position: absolute !important;
+    top: -1000px !important;
   }
 
+/* label positioning file input */
+  label.label input[type="file"] {
+    position: absolute;
+    top: -1000px;
+  }
+
+/* styling for button, overridden so that the stylesheet switch function works, otherwise it acts on the bootstrap stylesheet and won't work */
   button {
     cursor: pointer !important;
     border: 3px solid #f9c74f !important;
@@ -57,6 +127,7 @@ color: #000000;
     text-align: center !important;    
 }
 
+/* styling for button hover, overridden so that the stylesheet switch function works, otherwise it acts on the bootstrap stylesheet and won't work */
 button:hover {
   cursor: pointer !important;
   border: 3px solid orange !important;
@@ -69,84 +140,8 @@ button:hover {
   align-items: center !important;
   text-align: center !important;    
 }
-
-.label {
-  cursor: pointer;
-  border: 3px solid orange;
-  border-radius: 30px;
-  margin: 10px 10px;
-  padding: 10px 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.label:hover {
-  background-color: orange;
-  color: white;   
-}
-
-  label.button input[type="button"] {
-    position: absolute !important;
-    top: -1000px !important;
-  }
-
-  label.label input[type="file"] {
-    position: absolute;
-    top: -1000px;
-  }
-
-  #imageInput {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    margin: 15px 15px 15px 15px;
-    padding: 15px 15px 15px 15px;
-}
-
-#myImg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
-  border: 15px solid #f9c74f;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
-  color: green;
-align-self: center;
-margin-top: 5px;
-margin-bottom: 35px;
-}
-
-label.label input[type="file"] {
-  position: absolute;
-  top: -1000px;
-}
-
-.label {
-  cursor: pointer;
-  border: 3px solid orange;
-  border-radius: 30px;
-  margin: 10px 10px;
-  padding: 10px 10px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
- 
   
-}
 
-* {
-    font-family: "Quicksand", sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
   /* ----- Navbar ----- */
   .nav-bar-container {
     border: 1px solid rgb(212, 212, 212);

@@ -3,71 +3,52 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
+/* font styling */
+* {
+    font-family: "Quicksand", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
 /* Hides the scrollbar */
 ::-webkit-scrollbar {
   width: 0px;
   height: 0px;
 }
 
-/* styling the img element */
-.profilePics {
-    border-radius: 50%;
-    border: 12px solid #5B7EE0;
-    box-sizing: border-box;
-    max-width: 300px;
-}
-
+/* p tag styling */
+p {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 25px;
+  color: #000000;
+  }
+  
 /* displays img and h1 on same line */
 h1 {
 display: inline;
 }
 
-/* p tag styling */
-p {
-font-style: normal;
-font-weight: 300;
-font-size: 20px;
-line-height: 25px;
-color: #000000;
-}
 
+
+/* styling for a centering div */
 .div-centered {
   text-align: center; 
   margin: auto; 
   width: 200px;
 }
 
-button {#5B7EE0
-  cursor: pointer !important;
-  border: 3px solid #688ffa !important;
-  background-color: #5B7EE0 !important;
-  color: white !important;
-  border-radius: 30px !important;
-  margin: 5px 5px !important;
-  padding: 10px 10px !important;
-  justify-content: center !important;
-  align-items: center !important;
-  text-align: center !important;    
+/* styling the profile img element */
+.profilePics {
+  border-radius: 50%;
+  border: 12px solid #5B7EE0;
+  box-sizing: border-box;
+  max-width: 300px;
 }
 
-button:hover {
-  cursor: pointer !important;
-  border: 3px solid #5B7EE0 !important;
-  background-color: white !important;
-  color: black !important;
-  border-radius: 30px !important;
-  margin: 5px 5px !important;
-  padding: 10px 10px;
-  justify-content: center !important;
-  align-items: center !important;
-  text-align: center !important;    
-}
-
-label.button input[type="button"] {
-  position:  !important;
-  top: -1000px !important;
-}
-
+/* styling of img input */
 #imageInput {
   display: flex;
   justify-content: center;
@@ -78,6 +59,7 @@ label.button input[type="button"] {
   padding: 15px 15px 15px 15px;
 }
 
+/* styling for img input */
 #myImg {
 display: flex;
 justify-content: center;
@@ -94,11 +76,7 @@ margin-top: 5px;
 margin-bottom: 35px;
 }
 
-label.label input[type="file"] {
-position: absolute;
-top: -1000px;
-}
-
+/* label styling */
 .label {
 cursor: pointer;
 border: 3px solid orange;
@@ -108,17 +86,55 @@ padding: 10px 10px;
 justify-content: center;
 align-items: center;
 text-align: center;
-
-
 }
 
-* {
-    font-family: "Quicksand", sans-serif;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+/* label hover styling */
+.label:hover {
+  background-color: orange;
+  color: white;   
+}
+
+/* label positioning button input */
+label.button input[type="button"] {
+  position:  !important;
+  top: -1000px !important;
+}
+
+/* label positioning file input */
+label.label input[type="file"] {
+  position: absolute;
+  top: -1000px;
   }
-  
+
+/* styling for button, overridden so that the stylesheet switch function works, otherwise it acts on the bootstrap stylesheet and won't work */
+button {
+  cursor: pointer !important;
+  border: 3px solid #688ffa !important;
+  background-color: #5B7EE0 !important;
+  color: white !important;
+  border-radius: 30px !important;
+  margin: 5px 5px !important;
+  padding: 10px 10px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;    
+}
+
+/* styling for button hover, overridden so that the stylesheet switch function works, otherwise it acts on the bootstrap stylesheet and won't work */
+button:hover {
+  cursor: pointer !important;
+  border: 3px solid #5B7EE0 !important;
+  background-color: white !important;
+  color: black !important;
+  border-radius: 30px !important;
+  margin: 5px 5px !important;
+  padding: 10px 10px;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;    
+}
+
+
   /* ----- Navbar ----- */
   .nav-bar-container {
     border: 1px solid rgb(212, 212, 212);
