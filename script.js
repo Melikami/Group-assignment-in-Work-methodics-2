@@ -59,11 +59,11 @@ function toggleTheme() {
     var img = document.getElementById('profile');
 
     // changes value of link href to change stylesheet
-    if (theme.getAttribute('href') == 'style.css') {
+    if (theme.getAttribute('href') == 'styleprofile.css') {
         theme.setAttribute('href', 'stylechange.css');
         img.src = 'img/profile2.png'
     } else {
-        theme.setAttribute('href', 'style.css');
+        theme.setAttribute('href', 'styleprofile.css');
         img.src = 'img/profile.png'
     }
 }
