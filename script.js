@@ -68,6 +68,18 @@ function toggleTheme() {
     }
 }
 
+/* Removes object from array */
+
+function remove() {
+    profiles.pop();
+    console.log("Profile Deleted")
+    nameDisplay.innerHTML = "";
+    dietDisplay.innerHTML = "";
+    ageDisplay.innerHTML = "";
+    foodDisplay.innerHTML = "";
+    profilePics.src = "";
+}
+
 
 const toggleDropdown = document.querySelector(".sub-links.container");
 console.log(toggleDropdown);
