@@ -17,6 +17,25 @@ body {
   height: 0px;
 }
 
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  grid-gap: 30px;
+}
+
+.info-grid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ec9126;
+  border-radius: 10px;
+  padding-top: 1rem;
+}
+
 /* p tag styling */
 p {
   font-style: normal;
@@ -227,12 +246,14 @@ button:hover {
   }
   
   .brand-name.text {
-    line-height: normal;
-    font-size: 30px;
+    /* font-size: 30px; */
+    /* font-size: clamp(20px, 30px, 40px); */
+    font-size: calc(1.375rem + 1.5vw);
     font-weight: 800;
     background-image: linear-gradient(90deg, #f7b267 0%, #f25c54 100%);
     color: transparent;
     -webkit-background-clip: text;
+    line-height: normal;
   }
   
   /* message */
